@@ -28,8 +28,14 @@ filter packet-mode {
 * Null
 
 ```
-root# show security zones security-zone trust
+root# show security-zone trust
 tcp-rst;
+address-book {
+    address lan 10.32.32.0/24;
+    address company {
+        dns-name company.com;
+    }
+}
 host-inbound-traffic {
     system-services {
         all;
@@ -46,7 +52,25 @@ interfaces {
 
 
 ##Security Policies
+```
+# set security forwarding-options family inet6 mode flow-based
+> show security flow session [ extensive ]
+> show security flow status
+> show security policies from-zone trust to-zone untrust detail
 
+#show groups junos-defaults [ applications ]
+
+
+[edit applications]
+root# show
+application junos-ftp {
+    application-protocol ignore;
+    protocol tcp;
+    destination-port 6021;
+}
+
+
+```
 ##Firewall User Authentication
 
 ##Screens
