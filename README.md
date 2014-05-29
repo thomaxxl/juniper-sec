@@ -86,6 +86,8 @@ policy default-permit {
     }
     scheduler-name working-hours;
 }
+
+# set security policies policy-rematch
 ```
 ##Firewall User Authentication
 
