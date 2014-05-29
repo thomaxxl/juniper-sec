@@ -22,14 +22,42 @@ filter packet-mode {
 ```
 
 ##Zones
+* Security
+* Functional
+* Junos-Host
+* Null
 
-* Security Policies
-* Firewall User Authentication
-* Screens
-NAT
-IPsec VPNs
-High Availability (HA) Clustering
-Unified Threat Management (UTM)
+```
+root# show security zones security-zone trust
+tcp-rst;
+host-inbound-traffic {
+    system-services {
+        all;
+        telnet {
+            except;
+        }
+    }
+}
+interfaces {
+    ge-0/0/0.0;
+}
+```
+
+
+
+##Security Policies
+
+##Firewall User Authentication
+
+##Screens
+
+##NAT
+
+##IPsec VPNs
+
+##High Availability (HA) Clustering
+
+##Unified Threat Management (UTM)
 
 #
 
