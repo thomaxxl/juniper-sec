@@ -70,8 +70,7 @@ application junos-ftp {
 
 # set schedulers scheduler working-hours [ monday daily ... ] [ time ]
 
-[edit security policies from-zone trust to-zone untrust]
-root# show
+root# show security policies from-zone trust to-zone untrust
 policy default-permit {
     match {
         source-address any;
@@ -79,7 +78,13 @@ policy default-permit {
         application any;
     }
     then {
-        permit;
+        permit {
+            firewall-authentication {
+                web-authentication {
+                    client-match contractors;
+                }
+            }
+        }
         log {
             session-init;
         }
@@ -88,9 +93,13 @@ policy default-permit {
 }
 
 # set security policies policy-rematch
+# insert policy
+
 ```
 ##Firewall User Authentication
-
+```
+# set access profile admin-access session-options client-idle-timeout 120
+```
 ##Screens
 
 ##NAT
