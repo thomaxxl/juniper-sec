@@ -99,6 +99,9 @@ policy default-permit {
 ##Firewall User Authentication
 ```
 # set access profile admin-access session-options client-idle-timeout 120
+# set access profile contractors client ext1 client-group C1 firewall-user password blah
+> show security firewall-authentication [ history users ]
+
 ```
 ##Screens
 
