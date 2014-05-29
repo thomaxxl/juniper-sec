@@ -28,7 +28,7 @@ filter packet-mode {
 * Null
 
 ```
-root# show security-zone trust
+# show security zones security-zone trust
 tcp-rst;
 address-book {
     address lan 10.32.32.0/24;
@@ -36,6 +36,7 @@ address-book {
         dns-name company.com;
     }
 }
+screen myscreen;
 host-inbound-traffic {
     system-services {
         all;
@@ -48,9 +49,6 @@ interfaces {
     ge-0/0/0.0;
 }
 ```
-
-
-
 ##Security Policies
 ```
 # set security forwarding-options family inet6 mode flow-based
