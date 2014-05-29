@@ -80,6 +80,9 @@ policy default-permit {
     }
     then {
         permit;
+        log {
+            session-init;
+        }
     }
     scheduler-name working-hours;
 }
