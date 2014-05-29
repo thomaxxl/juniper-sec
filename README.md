@@ -104,6 +104,7 @@ policy default-permit {
 
 ```
 ##Screens
+```
 # show security screen
 ids-option myscreen {
     icmp {
@@ -181,6 +182,7 @@ ids-option untrust-screen {
         destination-ip-based 1000;
     }
 }
+```
 ##NAT
 
 ##IPsec VPNs
