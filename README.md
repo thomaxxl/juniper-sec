@@ -104,7 +104,83 @@ policy default-permit {
 
 ```
 ##Screens
-
+# show security screen
+ids-option myscreen {
+    icmp {
+        fragment;
+        large;
+        ping-death;
+    }
+    ip {
+        bad-option;
+        security-option;
+        source-route-option;
+        strict-source-route-option;
+        unknown-protocol;
+        block-frag;
+        tear-drop;
+    }
+    tcp {
+        syn-fin;
+        fin-no-ack;
+        tcp-no-flag;
+        syn-frag;
+        syn-ack-ack-proxy;
+        syn-flood {
+            attack-threshold 100;
+        }
+        land;
+    }
+}
+ids-option untrust-screen {
+    alarm-without-drop;
+    icmp {
+        ip-sweep;
+        fragment;
+        large;
+        flood;
+        ping-death;
+    }
+    ip {
+        bad-option;
+        record-route-option;
+        timestamp-option;
+        security-option;
+        stream-option;
+        spoofing;
+        source-route-option;
+        loose-source-route-option;
+        strict-source-route-option;
+        unknown-protocol;
+        block-frag;
+        tear-drop;
+    }
+    tcp {
+        syn-fin;
+        fin-no-ack;
+        tcp-no-flag;
+        syn-frag;
+        port-scan;
+        syn-ack-ack-proxy;
+        syn-flood {
+            alarm-threshold 1024;
+            attack-threshold 200;
+            source-threshold 1024;
+            destination-threshold 2048;
+            queue-size 2000; ## Warning: 'queue-size' is deprecated
+            timeout 20;
+        }
+        land;
+        winnuke;
+    }
+    udp {
+        flood;
+    }
+    limit-session {
+        source-ip-based 1000;
+        destination-ip-based 1000;
+    }
+}
 ##NAT
 
 ##IPsec VPNs
