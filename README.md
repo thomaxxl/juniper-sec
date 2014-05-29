@@ -60,7 +60,6 @@ interfaces {
 
 #show groups junos-defaults [ applications ]
 
-
 [edit applications]
 root# show
 application junos-ftp {
@@ -69,7 +68,21 @@ application junos-ftp {
     destination-port 6021;
 }
 
+# set schedulers scheduler working-hours [ monday daily ... ] [ time ]
 
+[edit security policies from-zone trust to-zone untrust]
+root# show
+policy default-permit {
+    match {
+        source-address any;
+        destination-address any;
+        application any;
+    }
+    then {
+        permit;
+    }
+    scheduler-name working-hours;
+}
 ```
 ##Firewall User Authentication
 
