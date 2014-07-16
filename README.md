@@ -229,6 +229,25 @@ Name                                         Value
 ##IPsec VPNs
 
 ##High Availability (HA) Clustering
+```
+set groups node0 system host-name SRX-node0
+set groups node0 interfaces fxp0 unit 0 family inet address 10.32.1.21/24
+set groups node1 system host-name SRX-node1
+set groups node1 interfaces fxp0 unit 0 family inet address 10.32.1.22/24
+set apply-groups "${node}"
+set chassis cluster control-link-recovery
+set chassis cluster reth-count 16
+set chassis cluster redundancy-group 0 node 0 priority 200
+set chassis cluster redundancy-group 0 node 1 priority 100
+set chassis cluster redundancy-group 1 node 1 priority 100
+set chassis cluster redundancy-group 1 node 0 priority 200
+
+set chassis cluster cluster-id 1 node 0 reboot
+set chassis cluster cluster-id 1 node 1 reboot
+
+set interfaces fab0 fabric-options member-interfaces ge-X/X/X
+set interfaces fab1 fabric-options member-interfaces ge-X/X/X
+```
 
 ##Unified Threat Management (UTM)
 
