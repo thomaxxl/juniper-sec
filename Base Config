@@ -1,0 +1,45 @@
+```
+delete system autoinstallation
+delete system services
+delete system name-server
+delete system ntp
+delete interfaces
+delete security
+delete vlan
+delete protocols
+```
+
+```
+set system time-zone Europe/Brussels
+set system no-multicast-echo
+set system no-redirects
+set system no-ping-record-route
+set system no-ping-time-stamp
+set system internet-options path-mtu-discovery
+set system ports console log-out-on-disconnect
+set system login class super-user-local idle-timeout 15
+set system login class super-user-local login-alarms
+set system login class super-user-local permissions all
+set system login user thomas class super-user-local
+set system login user thomas authentication plain-text-password
+set system services ssh connection-limit 5
+set system services ssh rate-limit 5
+set system ntp boot-server X.X.X.X
+set system ntp server X.X.X.X
+set system name-server 8.8.8.8
+set security flow tcp-mss ipsec-vpn mss 1380
+set security alg dns disable
+set security alg dns maximum-message-length 8192
+set security alg dns doctoring sanity-check
+set security alg ftp ftps-extension
+set security alg ftp line-break-extension
+set security alg rtsp disable
+set security alg sccp disable
+delete system syslog
+set system syslog archive size 100k files 3
+set system syslog user * any emergency
+set system syslog file messages any critical
+set system syslog file messages authorization info
+set system syslog file interactive-commands interactive-commands error
+set applications application junos-ssh inactivity-timeout 7200
+```
