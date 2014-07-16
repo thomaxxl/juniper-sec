@@ -249,6 +249,47 @@ set interfaces fab0 fabric-options member-interfaces ge-X/X/X
 set interfaces fab1 fabric-options member-interfaces ge-X/X/X
 ```
 
+##IDP
+Install IDP license
+```
+> start shell
+% cd /var/tmp
+% scp user@server:dir1/licensefile.txt .
+% cd /var/db/idpd
+% scp user@server:/dir1/idp.tar.tgz
+% tar xzvf idp.tar.tgz
+% exit
+
+> request system license add /var/tmp/licensefile.txt
+> show system license (look for installed license)
+> request security idp security-package install
+> request security idp security-package install status (repeat until you get a “done”)
+> request security idp security-package install policy-templates (templates from juniper)
+> configure
+# set system scripts commit file templates.xsl
+# commit
+# set security idp active-policy ? (to view available policies)
+```
+Enable Policies
+```
+# edit security idp
+# delete idp-policy DMZ_Services
+# delete idp-policy DNS_Services
+# delete idp-policy File_Server
+# delete idp-policy Getting_Started
+# delete idp-policy IDP_Default
+# delete idp-policy Web_Server
+# show idp-policy Recommended (only template left after deletes above)
+# delete idp-policy Recommended rulebase-ips rule 1 (or any rule you do not want 1 – 9 )
+# set active-policy Recommended (sets the IPS policy)
+```
+apply ips policy to a security policy
+```
+top edit security policies from-zone untrust to-zone zone_name
+set policy webservers then permit application-services idp (choose your then stmt and put in idp)
+delete system scripts (delete the templates.xsl script from above)
+```
+
 ##Unified Threat Management (UTM)
 
 #
