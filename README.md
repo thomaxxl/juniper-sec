@@ -228,6 +228,9 @@ Name                                         Value
 
 ##IPsec VPNs
 
+Debug single vpn:
+```request security ike debug-enable local 81.246.13.226 remote 91.176.128.1```
+
 ##High Availability (HA) Clustering
 ```
 set groups node0 system host-name SRX-node0
@@ -292,6 +295,6 @@ delete system scripts (delete the templates.xsl script from above)
 
 ##Unified Threat Management (UTM)
 
-#
+##Var
 
 
