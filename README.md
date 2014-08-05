@@ -228,8 +228,24 @@ Name                                         Value
 
 ##IPsec VPNs
 
+Dynamic vpn
+
+Static vpn
+
 Debug single vpn:
 ```request security ike debug-enable local 81.246.13.226 remote 91.176.128.1```
+
+Error codes:
+- No proposal chosen : 
+    - proposal mismatch
+    - tunnel interface not in security zone
+
+- 
+
+How to analyze the IKE Phase 1 messages in the Kmd Log for a J Series or SRX Series device : http://kb.juniper.net/InfoCenter/index?page=content&id=KB10101
+
+How to analyze IKE Phase 2 Messages in the Kmd Log for a J Series or SRX Series device :
+http://kb.juniper.net/InfoCenter/index?page=content&id=KB10099
 
 ##High Availability (HA) Clustering
 ```
