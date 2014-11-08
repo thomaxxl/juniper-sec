@@ -269,6 +269,7 @@ http://kb.juniper.net/InfoCenter/index?page=content&id=KB10099
 # set interfaces fab0 fabric-options member-interfaces ge-X/X/X
 # set interfaces fab1 fabric-options member-interfaces ge-X/X/X
 ```
+http://kb.juniper.net/InfoCenter/index?page=content&id=KB15504
 
 ##IDP
 Install IDP license
