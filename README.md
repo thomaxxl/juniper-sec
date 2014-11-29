@@ -322,3 +322,4 @@ delete system scripts (delete the templates.xsl script from above)
 ##Var
 
 
+http://rtoodtoo.net/category/jncip-sec/
