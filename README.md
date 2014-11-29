@@ -323,3 +323,4 @@ delete system scripts (delete the templates.xsl script from above)
 
 
 http://rtoodtoo.net/category/jncip-sec/
+http://exam.test4actual.com/JN0-632.pdf
