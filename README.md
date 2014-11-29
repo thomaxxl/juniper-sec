@@ -66,6 +66,9 @@ application junos-ftp {
     destination-port 6021;
 }
 
+troubleshooting:
+http://inetzeroblog.com/troubleshooting-security-policies/#more-622
+
 # set schedulers scheduler working-hours [ monday daily ... ] [ time ]
 
 root# show security policies from-zone trust to-zone untrust
@@ -96,6 +99,8 @@ policy default-permit {
 ```
 ##Firewall User Authentication
 ```
+web / passthrough
+
 # set access profile admin-access session-options client-idle-timeout 120
 # set access profile contractors client ext1 client-group C1 firewall-user password blah
 > show security firewall-authentication [ history users ]
