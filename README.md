@@ -21,7 +21,14 @@ filter packet-mode {
 }
 ```
 
-##Zones
+## SRX Series Hardware (1)
+- IOC
+- SPC
+- FPC
+- number of interfaces
+- 
+
+##Zones (4)
 * Security
 * Functional
 * Junos-Host
@@ -49,7 +56,7 @@ interfaces {
     ge-0/0/0.0;
 }
 ```
-##Security Policies
+##Security Policies (5)
 ```
 # set security forwarding-options family inet6 mode flow-based
 > show security flow session [ extensive ]
@@ -97,7 +104,7 @@ policy default-permit {
 # insert policy
 
 ```
-##Firewall User Authentication
+##Firewall User Authentication (1)
 ```
 web / passthrough
 
@@ -106,7 +113,7 @@ web / passthrough
 > show security firewall-authentication [ history users ]
 
 ```
-##Screens
+##Screen Options (3)
 ```
 # show security screen
 ids-option myscreen {
@@ -229,9 +236,9 @@ Name                                         Value
 
 
 ```
-##NAT
+##NAT (4)
 
-##IPsec VPNs
+##IPsec VPNs (3)
 
 Dynamic vpn
 
@@ -252,7 +259,7 @@ How to analyze the IKE Phase 1 messages in the Kmd Log for a J Series or SRX Ser
 How to analyze IKE Phase 2 Messages in the Kmd Log for a J Series or SRX Series device :
 http://kb.juniper.net/InfoCenter/index?page=content&id=KB10099
 
-##High Availability (HA) Clustering
+##High Availability (HA) Clustering (3)
 ```
 > set chassis cluster cluster-id <0-15> node <0-1> reboot
 
@@ -276,7 +283,7 @@ http://kb.juniper.net/InfoCenter/index?page=content&id=KB10099
 ```
 http://kb.juniper.net/InfoCenter/index?page=content&id=KB15504
 
-##IDP
+##IDP (1)
 Install IDP license
 ```
 > start shell
@@ -317,10 +324,14 @@ set policy webservers then permit application-services idp (choose your then stm
 delete system scripts (delete the templates.xsl script from above)
 ```
 
-##Unified Threat Management (UTM)
+##Unified Threat Management (UTM) (1)
 set security policy from-zone untrust to-zone trust policy test then permit application-services utm-policy <policy name>
 
 http://jncie-sec.exactnetworks.net/2012/11/srx-utm-web-filtering.html
+
+##Anti Virus (2)
+
+##Web Filtering (1)
 
 ##Var
 
