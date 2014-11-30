@@ -324,6 +324,7 @@ http://jncie-sec.exactnetworks.net/2012/11/srx-utm-web-filtering.html
 
 ##Var
 
+detailed objectives: http://www.juniper.net/us/en/training/certification/resources_jno_332.page
 
 http://rtoodtoo.net/category/jncip-sec/
 http://exam.test4actual.com/JN0-632.pdf
