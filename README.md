@@ -339,3 +339,5 @@ detailed objectives: http://www.juniper.net/us/en/training/certification/resourc
 
 http://rtoodtoo.net/category/jncip-sec/
 http://exam.test4actual.com/JN0-632.pdf
+
+http://quizlet.com/12835799/juniper-jncis-jsec-jn0-332-flash-cards/
