@@ -303,6 +303,9 @@ Install IDP license
 # set system scripts commit file templates.xsl
 # commit
 # set security idp active-policy ? (to view available policies)
+
+Custom signature : http://kb.juniper.net/InfoCenter/index?page=content&id=KB21338
+
 ```
 Enable Policies
 ```
