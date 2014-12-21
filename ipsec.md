@@ -66,6 +66,8 @@ KMD_INTERNAL_ERROR: iked_ifstate_eoc_handler: EOC msg received
 
 iked_process_ifl_ext_add: ifl tunnel-id lookup failed for ifl ge-0/0/1.0
 
+KMD_INTERNAL_ERROR: iked_update_ha_blob: Error updating blob with type = 80000025. Error: No such file or directory
+
 
 Phase 2 error messages
 
