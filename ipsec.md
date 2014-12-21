@@ -57,6 +57,10 @@ n =
 [Aug 22 20:40:14]ike_encode_packet: Start, SA = { 0xe4d65d2e a7bf1c17 - 498aaa01 01d0dd21 } / 5aa9f0f2, nego = 0
 ```
 
+Debugging:
+set system syslog file kmd-logs match KMD
+
+
 Phase 1 error messages
 
 iked_ts_config_template_clean_up_all_gt_gi Failed to find sa_cfg xxx
