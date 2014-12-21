@@ -61,6 +61,12 @@ Phase 1 error messages
 
 iked_ts_config_template_clean_up_all_gt_gi Failed to find sa_cfg xxx
 
+KMD_INTERNAL_ERROR: iked_ifstate_eoc_handler: EOC msg received
+
+
+iked_process_ifl_ext_add: ifl tunnel-id lookup failed for ifl ge-0/0/1.0
+
+
 Phase 2 error messages
 
 ---
