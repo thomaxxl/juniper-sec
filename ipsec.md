@@ -1,5 +1,8 @@
 IPSEC Troubleshooting
 
+- establish-tunnels immediately
+
+
 http://rtoodtoo.net/2013/08/23/jncie-sec-traceoptions-ipsec-troubleshooting/
 http://kb.juniper.net/InfoCenter/index?page=content&id=KB10099
 
@@ -58,6 +61,7 @@ n =
 ```
 
 Debugging:
+set system syslog file kmd-logs daemon info
 set system syslog file kmd-logs match KMD
 
 
