@@ -1,5 +1,7 @@
 IPSEC Troubleshooting
 
+request security ike debug-enable local 10.25.13.226 remote 10.25.128.1
+
 http://rtoodtoo.net/2013/08/23/jncie-sec-traceoptions-ipsec-troubleshooting/
 http://kb.juniper.net/InfoCenter/index?page=content&id=KB10099
 
