@@ -336,6 +336,9 @@ http://jncie-sec.exactnetworks.net/2012/11/srx-utm-web-filtering.html
 
 ##Web Filtering (1)
 
+Enhanced Web Filtering 
+http://kb.juniper.net/InfoCenter/index?page=content&id=KB22483
+
 ##Var
 
 detailed objectives: http://www.juniper.net/us/en/training/certification/resources_jno_332.page
