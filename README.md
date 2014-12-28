@@ -333,6 +333,7 @@ set security policy from-zone untrust to-zone trust policy test then permit appl
 http://jncie-sec.exactnetworks.net/2012/11/srx-utm-web-filtering.html
 
 ##Anti Virus (2)
+http://kb.juniper.net/InfoCenter/index?page=content&id=TN13
 
 ##Web Filtering (1)
 
