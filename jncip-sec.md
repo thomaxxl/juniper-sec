@@ -8,3 +8,4 @@ Case Study: Internet access through two ISPs on SRX
  http://www.aiotestking.com/juniper/why-did-the-session-close/
  
  http://www.juniper.net/techpubs/en_US/junos11.4/information-products/topic-collections/nce/lan2lan-vpn-jseries-srx-series/lan2lan-vpn-jseries-srx-series.pdf
+ http://inetzeroblog.com/nat-networks-exchanged-over-ospf/
