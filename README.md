@@ -342,6 +342,8 @@ http://kb.juniper.net/InfoCenter/index?page=content&id=TN13
 
 ##Web Filtering (1)
 
+Integrated web filtering
+http://kb.juniper.net/InfoCenter/index?page=content&id=KB16334
 Enhanced Web Filtering 
 http://kb.juniper.net/InfoCenter/index?page=content&id=KB22483
 
