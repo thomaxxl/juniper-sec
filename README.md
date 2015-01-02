@@ -240,6 +240,9 @@ Name                                         Value
 ```
 ##NAT (4)
 
+nat pools should never overlap
+static source pool...
+
 ##IPsec VPNs (3)
 
 Dynamic vpn
@@ -335,6 +338,9 @@ delete system scripts (delete the templates.xsl script from above)
 ```
 
 ##Unified Threat Management (UTM) (1)
+
+anti-spam, anti-virus, web-filtering
+
 ```
 set security policy from-zone untrust to-zone trust policy test then permit application-services utm-policy <policy name>
 
