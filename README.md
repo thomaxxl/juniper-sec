@@ -104,6 +104,9 @@ policy default-permit {
 # insert policy
 
 ```
+
+policy is only applied to first packet in flow
+
 ##Firewall User Authentication (1)
 ```
 web / passthrough
