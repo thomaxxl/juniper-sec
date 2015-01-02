@@ -30,7 +30,7 @@ filter packet-mode {
 
 ##Zones (4)
 * Security
-* Functional
+* Functional : http://kb.juniper.net/InfoCenter/index?page=content&id=KB6375
 * Junos-Host
 * Null
 
@@ -113,6 +113,8 @@ web / passthrough
 > show security firewall-authentication [ history users ]
 
 ```
+types
+only one type can be used simultaneously
 ##Screen Options (3)
 ```
 # show security screen
@@ -337,9 +339,22 @@ delete system scripts (delete the templates.xsl script from above)
 set security policy from-zone untrust to-zone trust policy test then permit application-services utm-policy <policy name>
 
 show security utm anti-virus status
+
+then {
+  permit {
+    application-services {
+      utm-policy ftp-inspect;
+    }
+  }
+}
 ```
+http://www.trapezenetworks.com/us/en/local/pdf/app-notes/3500149-en.pdf
 
 http://jncie-sec.exactnetworks.net/2012/11/srx-utm-web-filtering.html
+
+http://www.aiotestking.com/juniper/what-are-two-pattern-lists-that-can-be-configured-in-the-junos-os-4/
+
+
 
 ##Anti Virus (2)
 http://kb.juniper.net/InfoCenter/index?page=content&id=TN13
