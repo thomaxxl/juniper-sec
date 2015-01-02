@@ -363,6 +363,8 @@ http://kb.juniper.net/InfoCenter/index?page=content&id=TN13
 
 http://www.juniper.net/techpubs/en_US/junos12.1/information-products/pathway-pages/security/security-utm-web-filtering.pdf
 
+types ....
+
 Integrated web filtering :
 http://kb.juniper.net/InfoCenter/index?page=content&id=KB16334
 
