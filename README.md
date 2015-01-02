@@ -370,6 +370,8 @@ http://kb.juniper.net/InfoCenter/index?page=content&id=TN13
 http://www.juniper.net/techpubs/en_US/junos12.1/information-products/pathway-pages/security/security-utm-web-filtering.pdf
 
 types ....
+Local 
+https://www.juniper.net/documentation/en_US/junos11.4/topics/example/utm-web-filtering-local-custom-object-configuring-cli.html
 
 Integrated web filtering :
 http://kb.juniper.net/InfoCenter/index?page=content&id=KB16334
