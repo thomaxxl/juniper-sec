@@ -340,6 +340,8 @@ set policy webservers then permit application-services idp (choose your then stm
 delete system scripts (delete the templates.xsl script from above)
 ```
 
+rulebase-ips rulebase-exempt
+
 ##Unified Threat Management (UTM) (1)
 
 anti-spam, anti-virus, web-filtering
@@ -375,7 +377,7 @@ trickling
 http://www.juniper.net/techpubs/en_US/junos12.1/information-products/pathway-pages/security/security-utm-web-filtering.pdf
 
 types ....
-Local 
+Local : urls and associated actions in local db
 https://www.juniper.net/documentation/en_US/junos11.4/topics/example/utm-web-filtering-local-custom-object-configuring-cli.html
 
 Integrated web filtering :
