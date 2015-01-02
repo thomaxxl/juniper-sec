@@ -341,6 +341,7 @@ delete system scripts (delete the templates.xsl script from above)
 
 anti-spam, anti-virus, web-filtering
 
+
 ```
 set security policy from-zone untrust to-zone trust policy test then permit application-services utm-policy <policy name>
 
@@ -364,6 +365,7 @@ http://www.aiotestking.com/juniper/what-are-two-pattern-lists-that-can-be-config
 
 ##Anti Virus (2)
 http://kb.juniper.net/InfoCenter/index?page=content&id=TN13
+trickling
 
 ##Web Filtering (1)
 
