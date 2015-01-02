@@ -259,6 +259,11 @@ How to analyze the IKE Phase 1 messages in the Kmd Log for a J Series or SRX Ser
 How to analyze IKE Phase 2 Messages in the Kmd Log for a J Series or SRX Series device :
 http://kb.juniper.net/InfoCenter/index?page=content&id=KB10099
 
+- Policy based vpn
+```
+set security policies from-zone trust to-zone vpnD policy trust-vpnD then permit tunnel ipsec-vpn myvpn
+```
+
 ##High Availability (HA) Clustering (3)
 ```
 > set chassis cluster cluster-id <0-15> node <0-1> reboot
