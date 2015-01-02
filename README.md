@@ -377,6 +377,7 @@ https://www.juniper.net/documentation/en_US/junos11.4/topics/example/utm-web-fil
 
 Integrated web filtering :
 http://kb.juniper.net/InfoCenter/index?page=content&id=KB16334
+http://kb.juniper.net/InfoCenter/index?page=content&id=KB17287
 
 Enhanced Web Filtering :
 http://kb.juniper.net/InfoCenter/index?page=content&id=KB22483
