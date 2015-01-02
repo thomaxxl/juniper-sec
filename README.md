@@ -333,7 +333,11 @@ delete system scripts (delete the templates.xsl script from above)
 ```
 
 ##Unified Threat Management (UTM) (1)
+```
 set security policy from-zone untrust to-zone trust policy test then permit application-services utm-policy <policy name>
+
+show security utm anti-virus status
+```
 
 http://jncie-sec.exactnetworks.net/2012/11/srx-utm-web-filtering.html
 
