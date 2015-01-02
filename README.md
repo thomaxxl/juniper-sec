@@ -342,10 +342,15 @@ http://kb.juniper.net/InfoCenter/index?page=content&id=TN13
 
 ##Web Filtering (1)
 
-Integrated web filtering
+http://www.juniper.net/techpubs/en_US/junos12.1/information-products/pathway-pages/security/security-utm-web-filtering.pdf
+
+Integrated web filtering :
 http://kb.juniper.net/InfoCenter/index?page=content&id=KB16334
-Enhanced Web Filtering 
+
+Enhanced Web Filtering :
 http://kb.juniper.net/InfoCenter/index?page=content&id=KB22483
+
+http://www.aiotestking.com/juniper/which-type-of-web-filtering-by-default-builds-a-cache-of-server-actions-associated-with-each-url-it-has-checked-4/
 
 ##Var
 
