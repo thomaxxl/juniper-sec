@@ -20,6 +20,7 @@ filter packet-mode {
     }
 }
 ```
+session based forwarding
 
 ## SRX Series Hardware (1)
 - IOC
