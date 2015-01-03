@@ -118,6 +118,8 @@ web / passthrough
 ```
 types
 only one type can be used simultaneously
+
+client groups example::
 ##Screen Options (3)
 ```
 # show security screen
