@@ -245,6 +245,7 @@ Name                                         Value
 
 nat pools should never overlap
 static source pool...
+port no-translation
 
 ##IPsec VPNs (3)
 
@@ -366,8 +367,9 @@ http://jncie-sec.exactnetworks.net/2012/11/srx-utm-web-filtering.html
 
 http://www.aiotestking.com/juniper/what-are-two-pattern-lists-that-can-be-configured-in-the-junos-os-4/
 
-
-
+```
+request security utm anti-virus juniper-express-engine patern-delete
+```
 ##Anti Virus (2)
 http://kb.juniper.net/InfoCenter/index?page=content&id=TN13
 trickling
