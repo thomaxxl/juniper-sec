@@ -368,8 +368,14 @@ http://jncie-sec.exactnetworks.net/2012/11/srx-utm-web-filtering.html
 http://www.aiotestking.com/juniper/what-are-two-pattern-lists-that-can-be-configured-in-the-junos-os-4/
 
 ```
-request security utm anti-virus juniper-express-engine patern-delete
+> request security utm anti-virus juniper-express-engine patern-delete
+
+# set content-filtering profile myprofile block-mime
 ```
+
+how is traffic evaluated when the av update is in progress? :: forwarded without inspection + log message
+
+configure antispam : http://www.juniper.net/techpubs/en_US/junos12.1x46/topics/example/utm-antispam-filter-server-based-configuring-cli.html
 ##Anti Virus (2)
 http://kb.juniper.net/InfoCenter/index?page=content&id=TN13
 trickling
