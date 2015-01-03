@@ -71,6 +71,7 @@ application junos-ftp {
     application-protocol ignore;
     protocol tcp;
     destination-port 6021;
+    inactivity-timeout never;
 }
 
 troubleshooting:
@@ -344,6 +345,7 @@ delete system scripts (delete the templates.xsl script from above)
 ```
 
 rulebase-ips rulebase-exempt
+close-client-and-server
 
 ##Unified Threat Management (UTM) (1)
 
@@ -382,11 +384,13 @@ configure antispam : http://www.juniper.net/techpubs/en_US/junos12.1x46/topics/e
 http://kb.juniper.net/InfoCenter/index?page=content&id=TN13
 trickling
 
+layers of decompression...
 ##Web Filtering (1)
 
 http://www.juniper.net/techpubs/en_US/junos12.1/information-products/pathway-pages/security/security-utm-web-filtering.pdf
 
-types ....
+types : enhanced, redirect, local, integrated...
+
 Local : urls and associated actions in local db
 https://www.juniper.net/documentation/en_US/junos11.4/topics/example/utm-web-filtering-local-custom-object-configuring-cli.html
 
