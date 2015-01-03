@@ -355,7 +355,8 @@ anti-spam, anti-virus, web-filtering
 ```
 set security policy from-zone untrust to-zone trust policy test then permit application-services utm-policy <policy name>
 
-show security utm anti-virus status
+> show security utm content-filtering statistics
+> show security utm anti-virus status
 
 then {
   permit {
