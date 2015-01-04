@@ -392,6 +392,7 @@ http://www.juniper.net/techpubs/en_US/junos12.1/topics/concept/utm-content-filte
 # set content-filtering profile myprofile block-mime
 ```
 
+full/express av
 how is traffic evaluated when the av update is in progress? :: forwarded without inspection + log message
 
 configure antispam : http://www.juniper.net/techpubs/en_US/junos12.1x46/topics/example/utm-antispam-filter-server-based-configuring-cli.html
