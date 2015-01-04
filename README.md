@@ -125,33 +125,6 @@ client groups example::
 ##Screen Options (3)
 ```
 # show security screen
-ids-option myscreen {
-    icmp {
-        fragment;
-        large;
-        ping-death;
-    }
-    ip {
-        bad-option;
-        security-option;
-        source-route-option;
-        strict-source-route-option;
-        unknown-protocol;
-        block-frag;
-        tear-drop;
-    }
-    tcp {
-        syn-fin;
-        fin-no-ack;
-        tcp-no-flag;
-        syn-frag;
-        syn-ack-ack-proxy;
-        syn-flood {
-            attack-threshold 100;
-        }
-        land;
-    }
-}
 ids-option untrust-screen {
     alarm-without-drop;
     icmp {
