@@ -297,6 +297,44 @@ Install IDP license
 
 Custom signature : http://kb.juniper.net/InfoCenter/index?page=content&id=KB21338
 
+[edit security]
+root@srx# show idp 
+idp-policy testidp {
+    rulebase-ips {
+        rule 1 {
+            match {
+                from-zone trust;
+                source-address any;
+                to-zone untrust;
+                destination-address any;
+                application default;
+                attacks {
+                    custom-attacks myattack;
+                }
+            }
+            then {
+                action {
+                    drop-connection;
+                }
+                notification {
+                    log-attacks;
+                }
+            }
+        }
+    }
+}                                       
+active-policy testidp;
+custom-attack myattack {
+    severity major;
+    attack-type {
+        signature {
+            context ftp-get-filename;
+            pattern ".*\.\[exe\]";
+            direction client-to-server;
+        }
+    }
+}
+
 ```
 Enable Policies
 ```
