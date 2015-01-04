@@ -346,6 +346,8 @@ http://jncie-sec.exactnetworks.net/2012/11/srx-utm-web-filtering.html
 
 http://www.aiotestking.com/juniper/what-are-two-pattern-lists-that-can-be-configured-in-the-junos-os-4/
 
+http://www.juniper.net/techpubs/en_US/junos12.1/topics/concept/utm-content-filtering-overview.html
+
 ```
 > request security utm anti-virus juniper-express-engine patern-delete
 
