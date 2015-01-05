@@ -176,44 +176,6 @@ ids-option untrust-screen {
 }
 
 > show security screen ids-option untrust-screen
-Screen object status:
-
-Name                                         Value
-  ICMP flood threshold                       1000
-  UDP flood threshold                        1000
-  TCP winnuke                                enabled
-  TCP port scan threshold                    5000
-  ICMP address sweep threshold               10000
-  IP tear drop                               enabled
-  TCP SYN flood attack threshold             200
-  TCP SYN flood alarm threshold              1024
-  TCP SYN flood source threshold             1024
-  TCP SYN flood destination threshold        2048
-  TCP SYN flood timeout                      20
-  IP spoofing                                enabled
-  ICMP ping of death                         enabled
-  IP source route option                     enabled
-  TCP land attack                            enabled
-  TCP SYN fragment                           enabled
-  TCP no flag                                enabled
-  IP unknown protocol                        enabled
-  IP bad options                             enabled
-  IP record route option                     enabled
-  IP timestamp option                        enabled
-  IP security option                         enabled
-  IP loose source route option               enabled
-  IP strict source route option              enabled
-  IP stream option                           enabled
-  ICMP fragmentation                         enabled
-  ICMP large packet                          enabled
-  TCP SYN FIN                                enabled
-  TCP FIN no ACK                             enabled
-  TCP SYN-ACK-ACK proxy threshold            512
-  IP block fragment                          enabled
-  Session source limit threshold             1000
-  Session destination limit threshold        1000
-  Alarm without drop                         enabled
-
 > show security screen statistics zone trust
 
 
