@@ -219,6 +219,67 @@ show security nat source summary
 
 ##IPsec VPNs (3)
 
+```
+ike {
+        proposal ike-phase1-proposal {
+            authentication-method pre-shared-keys;
+            dh-group group2;
+            authentication-algorithm sha1;
+            encryption-algorithm 3des-cbc;
+            lifetime-seconds 86400;
+        }
+        policy ike-phase1-policy {
+            mode main;
+            proposals ike-phase1-proposal;
+            pre-shared-key ascii-text "$9$6qsMAtOrlMXNbp0MX"; ## SECRET-DATA
+        }
+        gateway gw-chicago {
+            ike-policy ike-phase1-policy;
+            address 100.1.1.1;
+            external-interface ge-0/0/0.0;
+        }
+    }
+    ipsec {
+        proposal phase-2 {
+            protocol esp;
+            authentication-algorithm hmac-md5-96;
+            encryption-algorithm des-cbc;
+            lifetime-seconds 28800;
+        }
+        policy phase2-policy {
+            perfect-forward-secrecy {
+                keys group2;
+            }
+            proposals phase-2;
+        }
+        vpn ike-vpn-chicago {
+            bind-interface st0.0;
+            ike {
+                gateway gw-chicago;
+                proxy-identity {
+                    local 192.168.2.0/24;
+                    remote 192.168.1.0/24;
+                    service any;
+                }
+                ipsec-policy phase2-policy;
+            }
+            establish-tunnels immediately;
+        }
+        vpn ike-vpn-chicago_1 {
+            bind-interface st0.1;
+            ike {
+                gateway gw-chicago;
+                proxy-identity {
+                    local 192.168.3.0/24;
+                    remote 192.168.1.0/24;
+                    service any;
+                }
+                ipsec-policy phase2-policy;
+            }
+            establish-tunnels immediately;
+          }
+       }
+       ```
 Dynamic vpn
 
 Static vpn
