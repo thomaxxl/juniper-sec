@@ -433,6 +433,7 @@ http://www.juniper.net/techpubs/en_US/junos12.1/topics/concept/utm-content-filte
 
 # set content-filtering profile myprofile block-mime
 ```
+Web Content Filtering Configuration Example: http://kb.juniper.net/InfoCenter/index?page=content&id=KB17285
 
 full/express av
 how is traffic evaluated when the av update is in progress? :: forwarded without inspection + log message
