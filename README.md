@@ -265,20 +265,7 @@ ipsec {
         }
         establish-tunnels immediately;
     }
-    vpn ike-vpn-chicago_1 {
-        bind-interface st0.1;
-        ike {
-            gateway gw-chicago;
-            proxy-identity {
-                local 192.168.3.0/24;
-                remote 192.168.1.0/24;
-                service any;
-            }
-            ipsec-policy phase2-policy;
-        }
-        establish-tunnels immediately;
-      }
-   }
+}
  ```
 Dynamic vpn
 
