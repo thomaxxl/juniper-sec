@@ -121,7 +121,11 @@ web / passthrough
 types
 only one type can be used simultaneously
 
-client groups example::
+client groups: list of groups associated with a client
+
+timeout : 10 min
+authentication order
+
 ##Screen Options (3)
 ```
 # show security screen
@@ -344,8 +348,9 @@ top edit security policies from-zone untrust to-zone zone_name
 set policy webservers then permit application-services idp (choose your then stmt and put in idp)
 delete system scripts (delete the templates.xsl script from above)
 ```
+terminal rules
 
-rulebase-ips rulebase-exempt
+rulebase-ips / rulebase-exempt
 close-client-and-server
 
 ##Unified Threat Management (UTM) (1)
