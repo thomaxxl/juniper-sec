@@ -182,9 +182,36 @@ ids-option untrust-screen {
 ```
 ##NAT (4)
 
+- Source NAT
+```
+# set security nat source address-persistent
+
+pool A {
+    address {
+        1.1.1.1/32 to 1.1.1.100/32;
+    }
+    host-address-base 10.1.1.1/32;
+    port no-translation
+    overflow-pool interface
+}
+pool-utilization-alarm raise-threshold 50 clear-threshold 40;
+```
+
+source-nat off
+
 nat pools should never overlap
+
+- Destination NAT
+
 static source pool...
-port no-translation
+
+sec policy: ```drop-untranslated```
+
+proxy arp
+
+show security nat source rule rulename
+show security nat source pool poolname
+show security nat source summary
 
 ##IPsec VPNs (3)
 
