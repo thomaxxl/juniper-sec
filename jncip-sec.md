@@ -1,5 +1,6 @@
 - How to selectively bypass the flow daemon in Junos : http://kb.juniper.net/InfoCenter/index?page=content&id=KB26757
 - SRX Transparent Mode http://jncie-sec.exactnetworks.net/2012/11/srx-transparent-mode.html
+- Rib Groub http://www.subnetzero.info/2014/04/10/rib-group-confusion/
 
 
 http://www.juniper.net/us/en/training/certification/resources/jncip-sec/
